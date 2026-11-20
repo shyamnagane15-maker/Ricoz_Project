@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "name": "ricoz-innovation",
+  "version": "1.0.0",
+  "description": "Main Project",
+  "homepage": "https://github.com/shyamnagane15-maker/Ricoz_Project#readme",
+  "bugs": {
+    "url": "https://github.com/shyamnagane15-maker/Ricoz_Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyamnagane15-maker/Ricoz_Project.git"
+  },
+  "license": "ISC",
+  "author": "Sam",
+  
+  "main": "index.js",
+  "scripts": {
+  "dev": "nodemon src/server.js",
+  "start": "node src/server.js"
+}
+}

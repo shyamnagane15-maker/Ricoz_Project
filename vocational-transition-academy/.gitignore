@@ -1,0 +1,26 @@
+﻿# Dependencies
+node_modules/
+
+# Environment files and secrets (keep only the .example files)
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Postman workspace metadata
+.postman/
+postman/

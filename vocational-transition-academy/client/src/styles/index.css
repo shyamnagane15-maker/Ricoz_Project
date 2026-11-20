@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-udaan-navy: #0B2E59;
+  --color-udaan-brand: #1D63B8;
+  --color-udaan-sky: #4DA3E0;
+  --color-udaan-gold: #F4B23F;
+  --color-udaan-sun: #F97316;
+  --color-udaan-ink: #10233A;
+  --color-udaan-muted: #4B5F74;
+  --color-udaan-cloud: #F5F8FC;
+
+  --font-sans: "Noto Sans", "Noto Sans Devanagari", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-udaan-cloud);
+    color: var(--color-udaan-ink);
+    font-family: var(--font-sans);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-udaan-brand);
+    outline-offset: 3px;
+  }
+}
