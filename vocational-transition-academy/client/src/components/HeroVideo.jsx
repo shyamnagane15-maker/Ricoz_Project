@@ -15,7 +15,7 @@ export default function HeroVideo() {
       <div
         role="img"
         aria-label={t('hero.videoPlaceholder')}
-        className="flex aspect-video w-full items-center justify-center rounded-xl bg-gradient-to-br from-udaan-navy to-udaan-brand p-6 text-center text-white shadow-md"
+        className="reference-grid flex h-[450px] w-full items-center justify-center border border-white/15 p-6 text-center text-white/70"
       >
         <p className="max-w-xs text-sm">{t('hero.videoPlaceholder')}</p>
       </div>
@@ -35,10 +35,10 @@ export default function HeroVideo() {
   }
 
   return (
-    <div className="relative">
+    <div className="relative w-full min-w-0">
       <video
         ref={videoRef}
-        className="aspect-video w-full rounded-xl bg-udaan-navy object-cover shadow-md"
+        className="h-[450px] w-full border border-white/15 bg-udaan-navy object-cover opacity-65"
         src={HERO_VIDEO.src}
         poster={HERO_VIDEO.poster || undefined}
         autoPlay={!reduceMotion}

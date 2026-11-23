@@ -8,13 +8,16 @@ export default function JobSearchPreview() {
   const { t } = useTranslation()
 
   return (
-    <section aria-labelledby="explore-heading" className="mx-auto max-w-6xl px-6 py-16">
-      <h2 id="explore-heading" className="text-2xl font-bold text-udaan-navy">{t('jobs.title')}</h2>
-      <p className="mt-2 max-w-2xl text-udaan-muted">{t('jobs.text')}</p>
+    <section aria-labelledby="explore-heading" className="mx-auto max-w-7xl px-6 py-20">
+      <div className="section-rule flex items-end justify-between pt-5">
+        <h2 id="explore-heading" className="text-4xl font-black text-udaan-navy md:text-5xl">{t('jobs.title')}</h2>
+        <p className="eyebrow text-udaan-muted">04 / Search</p>
+      </div>
+      <p className="mt-5 max-w-2xl text-lg text-udaan-muted">{t('jobs.text')}</p>
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="mt-6 grid gap-4 rounded-xl bg-white p-6 shadow-sm md:grid-cols-4 md:items-end"
+        className="mt-8 grid gap-px border border-udaan-ink/15 bg-udaan-ink/15 md:grid-cols-4 md:items-end"
       >
         {fields.map((f) => (
           <div key={f}>

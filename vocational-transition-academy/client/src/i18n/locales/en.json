@@ -1,4 +1,48 @@
 {
+    "auth": {
+    "loading": "Loading…",
+    "chooser": {
+      "title": "Sign in",
+      "text": "Choose how you use the academy, and we will take you to the right place.",
+      "trainee": "I am a trainee at the academy.",
+      "parent": "I am the parent or guardian of a trainee.",
+      "partner": "I represent an employer, NGO or partner organization.",
+      "staff": "I am an academy administrator or trainer."
+    },
+    "portalName": { "trainee": "Trainee", "parent": "Parent or guardian", "partner": "Employer, NGO or partner", "staff": "Academy staff" },
+    "loginTitle": "Sign in: {{portal}}",
+    "signupTitle": "Create an account: {{portal}}",
+    "email": "Email address",
+    "password": "Password",
+    "passwordHint": "At least 10 characters.",
+    "show": "Show password",
+    "name": "Full name",
+    "organization": "Organization name",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "signUp": "Create account",
+    "signingUp": "Creating account…",
+    "noAccount": "No account yet?",
+    "haveAccount": "Already have an account?",
+    "createAccount": "Create an account",
+    "changePortal": "Choose a different portal",
+    "staffNote": "Staff accounts are created by the academy. Please contact the administrator if you need one.",
+    "pendingTitle": "Thank you",
+    "pendingText": "Your account has been created and is waiting for academy approval. You will be able to sign in once it is approved.",
+    "error": "Something went wrong. Please try again."
+  },
+  "dash": {
+    "welcome": "Welcome, {{name}}",
+    "emptyTitle": "Nothing here yet",
+    "role": { "admin": "Administrator", "trainer": "Trainer", "trainee": "Trainee", "parent": "Parent or guardian", "employer": "Employer or partner" },
+    "empty": {
+      "admin": "Management tools will appear here as they are built.",
+      "trainer": "Your assigned batches will appear here once the academy assigns them.",
+      "trainee": "Your training will appear here once the academy enrolls you.",
+      "parent": "A trainee's progress will appear here once the academy links your account and the trainee agrees to share it.",
+      "employer": "Your organization's opportunities will appear here once this feature is available."
+    }
+  },
     "jobs": {
     "title": "Explore opportunities",
     "text": "A preview of how trainees will be able to look for opportunities later.",
@@ -16,7 +60,8 @@
   },
   "skip": "Skip to main content",
   "brand": { "name": "Udaan", "suffix": "Academy" },
-  "nav": { "label": "Main", "home": "Home", "programs": "Programs", "about": "About", "parents": "Parents", "employers": "Employers", "contact": "Contact", "login": "Login", "menu": "Menu" },
+  "nav": { "label": "Main", "home": "Home", "programs": "Programs", "about": "About", "parents": "Parents", "employers": "Employers", "contact": "Contact", "login": "Login", "menu": "Menu", "dashboard": "Dashboard",
+"logout": "Sign out" },
   "lang": { "label": "Language" },
   "hero": {
         "videoPlaceholder": "The academy video will appear here once it is approved.",

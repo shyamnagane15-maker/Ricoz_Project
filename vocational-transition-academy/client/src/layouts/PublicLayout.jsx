@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { useTranslation } from 'react-i18next'
+import useAuth from '../hooks/useAuth'
 
 const links = [
   { to: '/', key: 'home', end: true },
@@ -12,12 +13,13 @@ const links = [
 ]
 
 const navClass = ({ isActive }) =>
-  `block rounded px-2 py-1 text-sm font-medium hover:underline ${
-    isActive ? 'underline decoration-udaan-gold decoration-2 underline-offset-8' : ''
+  `block px-1 py-2 text-sm font-semibold hover:text-udaan-gold ${
+    isActive ? 'text-udaan-gold' : 'text-white/75'
   }`
 
 export default function PublicLayout() {
   const { t, i18n } = useTranslation()
+  const { user, logout } = useAuth()
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   const mainRef = useRef(null)
@@ -56,9 +58,9 @@ export default function PublicLayout() {
         {t('skip')}
       </a>
 
-      <header className="bg-udaan-navy text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
-          <Link to="/" className="text-xl font-bold tracking-tight">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-udaan-navy text-white">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-5">
+          <Link to="/" className="text-xl font-black tracking-[-0.04em]">
             {t('brand.name')} <span className="font-normal text-udaan-gold">{t('brand.suffix')}</span>
           </Link>
 
@@ -85,14 +87,26 @@ export default function PublicLayout() {
                   </NavLink>
                 </li>
               ))}
-              <li>
-                <Link
-                  to="/login"
-                  className="inline-block rounded bg-udaan-gold px-4 py-2 text-sm font-semibold text-udaan-navy"
-                >
-                  {t('nav.login')}
-                </Link>
-              </li>
+                            {user ? (
+                <>
+                  <li>
+                    <Link to={`/dashboard/${user.role}`} className="inline-block rounded bg-udaan-gold px-4 py-2 text-sm font-semibold text-udaan-navy">
+                      {t('nav.dashboard')}
+                    </Link>
+                  </li>
+                  <li>
+                    <button type="button" onClick={logout} className="rounded border border-white/60 px-3 py-2 text-sm font-medium">
+                      {t('nav.logout')}
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <li>
+                  <Link to="/login" className="inline-block rounded bg-udaan-gold px-4 py-2 text-sm font-semibold text-udaan-navy">
+                    {t('nav.login')}
+                  </Link>
+                </li>
+              )}
               <li>
                 <div role="group" aria-label={t('lang.label')} className="flex gap-1">
                   {langButton('en', 'English')}
@@ -108,8 +122,8 @@ export default function PublicLayout() {
         <Outlet />
       </main>
 
-      <footer className="bg-udaan-navy text-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm">
+      <footer className="border-t border-white/10 bg-udaan-navy text-white">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-10 text-sm">
           <p>{t('footer.contactPending')}</p>
           <ul className="flex gap-6">
             <li><Link to="/privacy" className="hover:underline">{t('footer.privacy')}</Link></li>
