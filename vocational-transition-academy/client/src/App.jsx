@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router'
 import PublicLayout from './layouts/PublicLayout'
-import Home from './pages/home'
+import Home from './pages/Home.jsx'
 import InfoPage from './pages/InfoPage'
 import LoginChooser from './pages/LoginChooser'
 import LoginForm from './pages/LoginForm'
