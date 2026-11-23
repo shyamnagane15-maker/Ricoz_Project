@@ -1,9 +1,28 @@
 {
+    "jobs": {
+    "title": "Explore opportunities",
+    "text": "A preview of how trainees will be able to look for opportunities later.",
+    "disability": "Disability type",
+    "location": "Location",
+    "qualification": "Qualification",
+    "select": "Select",
+    "search": "Search",
+    "soon": "Search is coming soon. Nothing you select here is saved or shared.",
+    "options": {
+      "disability": { "visual": "Visual", "hearing": "Hearing", "locomotor": "Locomotor", "intellectual": "Intellectual", "other": "Other" },
+      "location": { "madhyaPradesh": "Madhya Pradesh", "maharashtra": "Maharashtra", "delhi": "Delhi", "karnataka": "Karnataka" },
+      "qualification": { "below10": "Below 10th", "pass10": "10th pass", "pass12": "12th pass", "diploma": "Diploma or ITI", "graduate": "Graduate" }
+    }
+  },
   "skip": "Skip to main content",
   "brand": { "name": "Udaan", "suffix": "Academy" },
   "nav": { "label": "Main", "home": "Home", "programs": "Programs", "about": "About", "parents": "Parents", "employers": "Employers", "contact": "Contact", "login": "Login", "menu": "Menu" },
   "lang": { "label": "Language" },
   "hero": {
+        "videoPlaceholder": "The academy video will appear here once it is approved.",
+    "videoLabel": "Academy introduction video",
+    "pause": "Pause video",
+    "play": "Play video",
     "title": "Udaan Vocational & Empowerment Academy",
     "text": "Job-readiness training in data entry, packaging, animal care and retail operations.",
     "explore": "Explore programs",

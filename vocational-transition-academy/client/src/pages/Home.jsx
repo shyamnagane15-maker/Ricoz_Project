@@ -1,6 +1,8 @@
 import { Link } from 'react-router'
 import { useTranslation } from 'react-i18next'
 import usePageTitle from '../hooks/usePageTitle'
+import HeroVideo from '../components/HeroVideo'
+import JobSearchPreview from '../components/JobSearchPreview'
 
 const audiences = [
   { key: 'trainees', to: '/programs' },
@@ -15,17 +17,20 @@ export default function Home() {
 
   return (
     <>
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h1 className="max-w-3xl text-4xl font-bold leading-tight text-udaan-navy">{t('hero.title')}</h1>
-        <p className="mt-4 max-w-2xl text-lg text-udaan-muted">{t('hero.text')}</p>
-        <div className="mt-8 flex flex-wrap gap-4">
-          <Link to="/programs" className="rounded-md bg-udaan-brand px-6 py-3 font-semibold text-white hover:bg-udaan-navy">
-            {t('hero.explore')}
-          </Link>
-          <Link to="/enquiry" className="rounded-md border-2 border-udaan-brand bg-white px-6 py-3 font-semibold text-udaan-brand hover:bg-udaan-cloud">
-            {t('hero.enquire')}
-          </Link>
+      <section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
+        <div>
+          <h1 className="text-4xl font-bold leading-tight text-udaan-navy">{t('hero.title')}</h1>
+          <p className="mt-4 text-lg text-udaan-muted">{t('hero.text')}</p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link to="/programs" className="rounded-md bg-udaan-brand px-6 py-3 font-semibold text-white hover:bg-udaan-navy">
+              {t('hero.explore')}
+            </Link>
+            <Link to="/enquiry" className="rounded-md border-2 border-udaan-brand bg-white px-6 py-3 font-semibold text-udaan-brand hover:bg-udaan-cloud">
+              {t('hero.enquire')}
+            </Link>
+          </div>
         </div>
+        <HeroVideo />
       </section>
 
       <section aria-labelledby="audiences-heading" className="mx-auto max-w-6xl px-6 pb-16">
@@ -55,6 +60,8 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      <JobSearchPreview />
     </>
   )
 }
