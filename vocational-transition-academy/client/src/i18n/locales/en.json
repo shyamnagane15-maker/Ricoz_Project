@@ -1,0 +1,44 @@
+{
+  "skip": "Skip to main content",
+  "brand": { "name": "Udaan", "suffix": "Academy" },
+  "nav": { "label": "Main", "home": "Home", "programs": "Programs", "about": "About", "parents": "Parents", "employers": "Employers", "contact": "Contact", "login": "Login", "menu": "Menu" },
+  "lang": { "label": "Language" },
+  "hero": {
+    "title": "Udaan Vocational & Empowerment Academy",
+    "text": "Job-readiness training in data entry, packaging, animal care and retail operations.",
+    "explore": "Explore programs",
+    "enquire": "Make an enquiry"
+  },
+  "audiences": {
+    "title": "Start here",
+    "trainees": { "title": "For trainees", "text": "See the training tracks and how to get started." },
+    "parents": { "title": "For parents and guardians", "text": "Learn how families stay informed." },
+    "employers": { "title": "For employers and partners", "text": "Learn about partnering with the academy." }
+  },
+  "tracks": {
+    "title": "Our training tracks",
+    "pending": "Details will be added once the academy confirms them.",
+    "dataEntry": "Data Entry",
+    "packaging": "Packaging",
+    "animalCare": "Animal Care",
+    "retail": "Retail Operations"
+  },
+  "soon": "Content for this page will be added once the academy approves it.",
+  "pages": {
+    "programs": { "title": "Programs" },
+    "about": { "title": "About the academy" },
+    "parents": { "title": "For parents and guardians" },
+    "employers": { "title": "For employers and partners" },
+    "enquiry": { "title": "Make an enquiry" },
+    "contact": { "title": "Contact" },
+    "login": { "title": "Login" },
+    "privacy": { "title": "Privacy" },
+    "accessibility": { "title": "Accessibility" },
+    "notFound": { "title": "Page not found" }
+  },
+  "footer": {
+    "contactPending": "Contact details will be published once verified.",
+    "privacy": "Privacy",
+    "accessibility": "Accessibility"
+  }
+}
